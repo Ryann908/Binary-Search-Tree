@@ -195,7 +195,6 @@ findSuc2(node, checker){
             if(value == node.data){
                 delNode = node;  
                 break;
-
             }
             if(value < node.data){
                 preNode = node;
@@ -429,6 +428,8 @@ let tree = new Tree([1,7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324]);
 
 tree.insert(2);
 tree.deleteItem(4);
+tree.deleteItem(3);
+
 
 console.log(tree.inOrder(tree.root));
 
